@@ -1,18 +1,13 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Navigator } from './src/navigator/Navigator';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-      <Icon name="infinite" size={50} />
-    </View>
+    <NavigationContainer>
+      <Navigator/>
+    </NavigationContainer>
   )
 }
 
 export default App;
-
-const styles = StyleSheet.create({
-
-});
